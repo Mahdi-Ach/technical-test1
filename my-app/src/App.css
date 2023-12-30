@@ -14,3 +14,7 @@
 h3{
   color: red;
 }
+.pagination{
+  max-width: fit-content !important;
+  margin: 0 auto !important;
+}

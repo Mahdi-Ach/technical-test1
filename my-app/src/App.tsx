@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <>
+    <Box sx={{ p: 2 }}>
       <Box className="input_search">
           <TextField id="standard-basic" label="Inser A Keyword" value={searchValue} variant="standard" inputProps={{onInput: searching}} />
       </Box>
@@ -110,11 +110,11 @@ function App() {
         })}
       </Grid>
       <Stack spacing={2}>
-        <Pagination page={page} count={Math.ceil(lengthusers/number_item_perpage)} color="primary" onChange={async (_, page) => {
+        <Pagination page={page} className="pagination" count={Math.ceil(lengthusers/number_item_perpage)} color="primary" onChange={async (_, page) => {
             setPage(page)
         }}/>
       </Stack>
-    </>
+    </Box>
   );
 }
 
