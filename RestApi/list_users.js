@@ -12,7 +12,6 @@ app.get('/users', async (req, res) => {
     const users = response.data;
     res.json(users);
   } catch (error) {
-    console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
