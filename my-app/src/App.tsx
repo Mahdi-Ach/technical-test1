@@ -37,7 +37,6 @@ function App() {
   const number_item_perpage = 6
   const fetchUsers = async (value: string='') => {
     try {
-      console.log(searchValue)
       const response = await fetch('http://localhost:3001/users'+'?limit='+number_item_perpage+"&skip="+(page-1)*number_item_perpage+"&criteria="+value);
       const data = await response.json();
       setUsers(data.users);

@@ -8,7 +8,6 @@ app.use(cors());
 
 app.get('/users', async (req, res) => {
   try {
-    console.log('https://dummyjson.com/users/search?q='+req.query.criteria+"&limit="+req.query.limit+"&skip="+req.query.skip);
     const response = await axios.get('https://dummyjson.com/users/search?q='+req.query.criteria+"&limit="+req.query.limit+"&skip="+req.query.skip);
     const users = response.data;
     res.json(users);
