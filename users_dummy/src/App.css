@@ -1,0 +1,20 @@
+.css-bhp9pd-MuiPaper-root-MuiCard-root{
+  box-shadow: none !important;
+}
+
+.persons{
+  background: rgb(230, 230, 230);
+}
+.css-cxz257-MuiCardMedia-root{
+  background-size: contain !important;
+}
+.input_search{
+  text-align: center;
+}
+h3{
+  color: red;
+}
+.pagination{
+  max-width: fit-content !important;
+  margin: 0 auto !important;
+}
